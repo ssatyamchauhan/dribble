@@ -9,90 +9,86 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="Stylesheet" href="./dribble.css" />
   </head>
 
   <body>
-    <div id="header" class="nav-wrapper">
-      <div id="inner-header" class="nav-inner">
-        <div id="logo" class="nav-logo">
-          <p>Dribble</p>
-        </div>
-        <ul id="nav" class="main-nav">
-          <span class="links-container">
-            <li class="nav-dropdown-item tab-link explore-tab">Explore</li>
-            <li class="nav-dropdown-item tab-link designers-tab">
-              For Designers
-            </li>
-            <li id="t-hiring" class="tab-hiring">Hiring Designers?</li>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </span>
-          <span class="actions-container">
-            <li id="t-search" class="tab-search">
-              <img src="./search.png" />
-            </li>
-            <li id="t-signin" class="tab-signin">Sign in</li>
-            <button id="t-signup" class="tab-signup">Sign up</button>
-          </span>
-        </ul>
+
+    <!-- Navgation bar -->
+
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Dribble</a>
+      <a href="#news">Explore</a>
+      <a href="#contact">For Designers</a>
+      <a href="#about">Hire Designers?</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div class="right-header">
+        <a href="#signin">Signin</a>
+        <a class="signup" href="#Signup">Signup</a>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <!-- Image Container -->
+
+    <div class="middle-body">
+      <div class="text">
+        <h1>Discover the world’s top designers & creatives</h1>
+        <p>
+          Dribbble is the leading destination to find & showcase creative work
+          and home to the world's best design professionals.
+        </p>
+      </div>
+      <div class="img-box">
+        <img src="show-content.jpg"/>
       </div>
     </div>
 
-
-
-    <div class="large-container">
-      <div class="content-image">
-        <div class="text-content">
-          <h1>Discover the world's top designer & creatives</h1>
-          <p>
-            Dribbble is the leading destination to find & showcase creative work
-            and home to the world's best design professionals.
-          </p>
-        </div>
-        <div class="show-content">
-          <div class="show-content-img">
-            <img src="./show-content.jpg" alt="internet is not working" />
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- filter box and category  -->
-    
-    <div class="filter-bar">
-      <div class="filter-box">
-        <select class="box-selections">
-          <option>Popular</option>
-          <option>Team</option>
-          <option>Debut</option>
-          <option>Recent</option>
-          <hr />
-          <option>Goods for sale</option>
+
+    <div class="filter">
+      <div>
+        <select>
+          <option>Coffee</option>
+          <option>Tea</option>
+          <option>Juice</option>
+          <option selected>Cocktail</option>
         </select>
       </div>
-      <div class="item-list">
-        <ul>
-          <li>All</li>
-          <li>Animaton</li>
-          <li>Branding</li>
-          <li>Illustration</li>
-          <li>Mobile</li>
-          <li>Print</li>
-          <li>Product Design</li>
-          <li>Typography</li>
-          <li>Web Design</li>
-        </ul>
+      <div class="scrollmenu">
+        <a href="#home">Animation</a>
+        <a href="#news">Branding</a>
+        <a href="#contact">Illustration</a>
+        <a href="#about">Mobile</a>
+        <a href="#support">Print</a>
+        <a href="#blog">Product Design</a>
+        <a href="#tools">Typography</a>
+        <a href="#base">Web Design</a>
       </div>
       <div class="filter-actions">filter</div>
     </div>
 
 
 
-
-
     <!-- Card part -->
+
+    
     <div class="flex-container">
       <div class="card-container">
         <div class="card">
@@ -222,8 +218,6 @@
         </div>
       </div>
 
-      
-      
       <div class="card-container">
         <div class="card">
           <img
@@ -256,10 +250,6 @@
         </div>
       </div>
 
-
-      
-
-           
       <div class="card-container">
         <div class="card">
           <img
@@ -291,9 +281,6 @@
           </div>
         </div>
       </div>
-      
-
-      
 
       <div class="card-container">
         <div class="card">
@@ -327,8 +314,6 @@
         </div>
       </div>
 
-      
-
       <div class="card-container">
         <div class="card">
           <img
@@ -360,7 +345,6 @@
           </div>
         </div>
       </div>
-      
 
       <div class="card-container">
         <div class="card">
@@ -394,8 +378,6 @@
         </div>
       </div>
 
-      
-
       <div class="card-container">
         <div class="card">
           <img
@@ -428,9 +410,6 @@
         </div>
       </div>
 
-
-      
-
       <div class="card-container">
         <div class="card">
           <img
@@ -462,7 +441,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </body>
 </html>

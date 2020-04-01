@@ -1,0 +1,64 @@
+select {
+  width: 140px;
+  height: 35px;
+  padding: 5px 35px 5px 5px;
+  font-size: 18px;
+  border-radius: 14px;
+  border: 2px solid;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+select::-ms-expand {
+  display: none;
+  outline: none;
+  border-radius: 14px;
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: #777;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+.filter-actions {
+  border: 2px solid black;
+  font-weight: bolder;
+  font-size: x-large;
+  font-family: monospace;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+@media (max-width: 1066px) {
+  .filter {
+    display: block;
+  }
+
+  .filter-actions {
+     display: none;
+  }
+
+  .scrollmenu {
+      margin-top: 10px;
+  }
+
+}
